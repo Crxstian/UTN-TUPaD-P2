@@ -1,0 +1,12 @@
+    Scanner scanner = new Scanner(System.in);
+    int numero,suma =0;
+
+    
+        do {
+            System.out.println("Ingrese un número (0 para terminar): ");
+            numero = scanner.nextInt();
+            if (numero%2 ==0) {
+            suma += numero;
+            }
+        } while (numero!=0);
+        System.out.println("La suma de los números pares es: "+suma);

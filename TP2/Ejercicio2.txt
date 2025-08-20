@@ -1,0 +1,19 @@
+    Scanner scanner = new Scanner(System.in);
+    int entero1,entero2,entero3,mayor;
+    
+    System.out.println("Ingrese un numero: ");
+    entero1 = scanner.nextInt();
+    System.out.println("Ingrese otro numero: ");
+    entero2 = scanner.nextInt();
+    System.out.println("Ingrese un tercer numero: ");
+    entero3 = scanner.nextInt();
+    
+    mayor = entero1;
+    
+        if (entero2>mayor) {
+            mayor = entero2;
+        }
+        if (entero3>mayor) {
+            mayor = entero3;
+        }
+        System.out.println("El mayor es: "+mayor);

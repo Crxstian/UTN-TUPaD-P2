@@ -1,0 +1,21 @@
+    public class TP1 {
+
+    static final double descuento = 0.10;
+
+    public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+    double precioProducto;
+    
+    System.out.println("Ingrese el precio del producto: ");
+    precioProducto = scanner.nextDouble();
+    calcularDescuentoEspecial(precioProducto);
+    }
+
+    public static  void calcularDescuentoEspecial(double precio){
+        double descuentoAplicado;
+        descuentoAplicado = precio*descuento;
+        System.out.println("El descuento especial aplicado es: "+descuentoAplicado);
+        System.out.println("El precio final con descuento es: "+(precio-descuentoAplicado));
+    }
+    }

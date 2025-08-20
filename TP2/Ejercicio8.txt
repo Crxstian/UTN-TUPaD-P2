@@ -1,0 +1,22 @@
+    public class TP2 {
+        
+    static double precioBase;
+    
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    double impuestoPorcentaje,descuentoPorcentaje;
+    
+    System.out.print("Ingrese el precio base del producto: ");
+    precioBase = scanner.nextDouble();
+    System.out.print("Ingrese el impuesto en porcentaje (Ejemplo: 10 para 10%): ");
+    impuestoPorcentaje = scanner.nextDouble()/100;
+    System.out.print("Ingrese el descuento en porcentaje(Ejemplo: 5 para 5%: ");
+    descuentoPorcentaje = scanner.nextDouble()/100;
+    
+    System.out.println("El precio final del producto es: "+calcularPrecioFinal(impuestoPorcentaje,descuentoPorcentaje));
+    }
+
+    public static double calcularPrecioFinal(double impuesto,double descuento){
+        double precioFinal = precioBase + (precioBase * impuesto) - (precioBase * descuento);
+        return precioFinal;
+    }    }

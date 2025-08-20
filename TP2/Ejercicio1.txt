@@ -1,0 +1,11 @@
+    Scanner scanner = new Scanner(System.in);
+    int anio;
+    System.out.println("Ingrese un aÃ±o: ");
+    anio = scanner.nextInt();
+    
+        if ((anio%4 ==0)&&(anio%100!=0)||(anio%400 == 0)) {
+            System.out.println("El aÃ±o "+anio+" es bisiesto.");
+        }
+        else{
+            System.out.println("El aÃ±o "+anio+" no es bisiesto.");
+        }   

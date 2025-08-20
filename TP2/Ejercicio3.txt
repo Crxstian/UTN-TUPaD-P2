@@ -1,0 +1,14 @@
+    Scanner scanner = new Scanner(System.in);
+    int edad;
+    System.out.println("Ingrese su edad: ");
+    edad = scanner.nextInt();
+    
+        if (edad<12) {
+            System.out.println("Eres un Niño.");
+        }else if (edad>=12 && edad<=17) {
+            System.out.println("Eres un Adolescente.");
+        }else if (edad>=18 && edad <=59) {
+            System.out.println("Eres un Adulto.");
+        }else{
+            System.out.println("Eres un Adulto Mayor.");
+        }
